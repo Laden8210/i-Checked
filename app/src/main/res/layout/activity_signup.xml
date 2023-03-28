@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et_rgspass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+    <EditText
+        android:id="@+id/et_regisUsername"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_Term"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Term"
+        app:layout_constraintTop_toBottomOf="@+id/et_Term" />
+
+    <EditText
+        android:id="@+id/et_Term"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Term and Year of Entry"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_curriversion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_curriversion"
+        app:layout_constraintTop_toBottomOf="@+id/et_curriversion" />
+
+    <EditText
+        android:id="@+id/et_curriversion"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Curriculum Version"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_curriculum"
+        app:layout_constraintStart_toStartOf="@+id/et_curriculum"
+        app:layout_constraintTop_toBottomOf="@+id/et_curriculum" />
+
+    <EditText
+        android:id="@+id/et_curriculum"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Curriculum "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_middlename"
+        app:layout_constraintStart_toStartOf="@+id/et_middlename"
+        app:layout_constraintTop_toBottomOf="@+id/et_middlename" />
+
+    <EditText
+        android:id="@+id/et_middlename"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Middle Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_firstname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/et_firstname" />
+
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_studentNo."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_studentNo."
+        app:layout_constraintTop_toBottomOf="@+id/et_studentNo." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Registration"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_studentNo."
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Student ID No."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_rgsPass"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_regisUsername"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/et_regisUsername"
+        app:layout_constraintTop_toBottomOf="@+id/et_regisUsername" />
+
+    <EditText
+        android:id="@+id/et_retypePass"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_rgsPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_rgsPass"
+        app:layout_constraintTop_toBottomOf="@+id/et_rgsPass" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/et_retypePass"
+        app:layout_constraintStart_toStartOf="@+id/et_retypePass"
+        app:layout_constraintTop_toBottomOf="@+id/et_retypePass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
